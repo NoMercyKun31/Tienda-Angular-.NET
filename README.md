@@ -52,6 +52,11 @@ Aplicación web fullstack para una tienda de videojuegos desarrollada con Angula
 - `/cliente` - Frontend Angular
 - `tienda_angular_dotnet_lunargames.sql` - Script de base de datos
 
+## Descarga del Proyecto
+
+El proyecto completo está disponible para su descarga en el siguiente enlace:
+[Descargar Proyecto (MediaFire)](https://www.mediafire.com/file/a95hxemspysq9no/doNet.zip/file)
+
 ## Archivo Comprimido
 
 El proyecto completo está disponible en el archivo `doNet.rar` que incluye todos los componentes necesarios para la ejecución.
