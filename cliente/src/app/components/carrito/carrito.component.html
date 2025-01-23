@@ -1,0 +1,58 @@
+<div class="container mx-auto px-4 py-8">
+  <h2 class="text-2xl font-bold mb-4">Carrito de Compras</h2>
+  
+  <div *ngIf="items.length === 0" class="text-center py-8">
+    <p class="text-gray-600">Tu carrito está vacío</p>
+  </div>
+
+  <div *ngIf="items.length > 0" class="space-y-4">
+    <!-- Items del carrito -->
+    <div *ngFor="let item of items" class="flex items-center justify-between p-4 bg-white rounded-lg shadow">
+      <div class="flex items-center space-x-4">
+        <img [src]="item.imagen" alt="{{item.titulo}}" class="w-16 h-16 object-cover rounded">
+        <div>
+          <h3 class="font-medium">{{item.titulo}}</h3>
+          <p class="text-gray-600">{{item.precio | currency:'EUR'}}</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-2">
+          <button (click)="actualizarCantidad(item.id, item.cantidad - 1)" 
+                  class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300">
+            -
+          </button>
+          <span class="w-8 text-center">{{item.cantidad}}</span>
+          <button (click)="actualizarCantidad(item.id, item.cantidad + 1)"
+                  class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300">
+            +
+          </button>
+        </div>
+        <button (click)="eliminarItem(item.id)" class="text-red-600 hover:text-red-800">
+          <i class="fas fa-trash"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Resumen y total -->
+    <div class="mt-8 p-4 bg-white rounded-lg shadow">
+      <div class="flex justify-between items-center mb-4">
+        <span class="font-medium">Total:</span>
+        <span class="text-xl font-bold">{{calcularTotal() | currency:'EUR'}}</span>
+      </div>
+      
+      <div class="flex justify-between space-x-4">
+        <button (click)="vaciarCarrito()" 
+                class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
+          Vaciar Carrito
+        </button>
+        <button (click)="abrirCheckout()" 
+                class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          Realizar Pedido
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Checkout Modal -->
+<app-checkout-modal #checkoutModal></app-checkout-modal>

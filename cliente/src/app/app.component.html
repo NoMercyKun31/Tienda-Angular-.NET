@@ -1,0 +1,286 @@
+<header *ngIf="!isAdminRoute()">
+  <nav class="bg-space-deep border-b border-space-nebula w-full">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <!-- Logo - mantener igual -->
+      <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <svg class="h-8 w-8 text-yellow-400" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+        </svg>
+        <span class="self-center text-2xl font-saira font-semibold whitespace-nowrap text-space-lunar">Lunar Games</span>
+      </a>
+
+      <!-- Botón de menú móvil - mantener igual -->
+      <button (click)="toggleMenu()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-space-lunar rounded-lg md:hidden hover:bg-space-nebula focus:outline-none focus:ring-2 focus:ring-space-nebula" aria-controls="navbar-sticky" [attr.aria-expanded]="isMenuOpen">
+        <span class="sr-only">Abrir menú principal</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+
+      <!-- Área del buscador -->
+      <div class="flex-1 flex justify-center items-center px-4">
+        <form (ngSubmit)="onSearchSubmit($event)" class="relative w-full max-w-xl group">
+          <input 
+            type="text" 
+            [(ngModel)]="searchTerm"
+            name="search"
+            placeholder="Buscar videojuegos..." 
+            class="w-full pl-5 pr-12 py-3 rounded-full bg-space-nebula/20 border-2 border-yellow-400/30 text-space-lunar placeholder-space-lunar/50 focus:outline-none focus:border-yellow-400 transition-all duration-300"
+          >
+          <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-yellow-400 rounded-full hover:bg-yellow-500 transition-colors group-hover:scale-105 duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-space-deep" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Botón del carrito -->
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button (click)="toggleCart()" type="button" class="text-space-deep bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+          Carrito ({{ totalItems }})
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+     <!-- Enlaces de navegación sticky -->
+  <nav class="sticky top-0 bg-space-deep border-t border-space-nebula z-40" *ngIf="!isAdminRoute()">
+    <div class="max-w-screen-xl mx-auto">
+      <ul class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 py-4">
+        <li>
+          <a href="#" class="block text-space-lunar hover:text-yellow-400">Inicio</a>
+        </li>
+        <li>
+          <a routerLink="/catalogo" class="block text-space-lunar hover:text-yellow-400">Catálogo</a>
+        </li>
+        <li>
+          <a routerLink="/contact" class="block text-space-lunar hover:text-yellow-400">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- Cart Sidebar -->
+<div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity z-50" 
+     [ngClass]="{'opacity-0 pointer-events-none': !isCartOpen, 'opacity-100': isCartOpen}"
+     (click)="closeCart()">
+  <!-- Cart Panel -->
+  <div class="fixed right-0 top-0 h-full w-full max-w-md bg-space-deep transform transition-transform duration-300 ease-in-out flex flex-col"
+       [ngClass]="{'translate-x-full': !isCartOpen, 'translate-x-0': isCartOpen}"
+       (click)="$event.stopPropagation()">
+    <!-- Cart Header -->
+    <div class="p-4 border-b border-space-nebula flex justify-between items-center">
+      <h2 class="text-xl font-saira font-semibold text-space-lunar">Tu Carrito</h2>
+      <div class="flex items-center space-x-2">
+        <button *ngIf="itemsCarrito.length > 0" 
+                (click)="vaciarCarrito()" 
+                class="text-red-500 hover:text-red-600 transition-colors"
+                title="Vaciar carrito">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+          </svg>
+        </button>
+        <button (click)="toggleCart()" 
+                class="text-space-lunar hover:text-yellow-400">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Cart Content -->
+    <div class="flex-1 p-4 overflow-y-auto">
+      <!-- Empty Cart Message -->
+      <div *ngIf="itemsCarrito.length === 0" class="text-center py-8">
+        <svg class="mx-auto h-12 w-12 text-space-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+        </svg>
+        <p class="mt-4 text-space-lunar">Tu carrito está vacío</p>
+        <p class="mt-2 text-space-silver text-sm">¡Agrega algunos juegos increíbles!</p>
+      </div>
+
+      <!-- Cart Items -->
+      <div *ngIf="itemsCarrito.length > 0" class="space-y-4">
+        <div *ngFor="let item of itemsCarrito" class="flex items-center space-x-4 bg-space-nebula rounded-lg p-4">
+          <div class="flex-1">
+            <h3 class="text-space-lunar font-medium">{{ item.titulo }}</h3>
+            <p class="text-yellow-400">€{{ item.precio }}</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <button (click)="actualizarCantidad(item.id_videojuego, item.cantidad - 1)" 
+                    class="text-space-lunar hover:text-yellow-400 p-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+              </svg>
+            </button>
+            <span class="text-space-lunar">{{ item.cantidad }}</span>
+            <button (click)="actualizarCantidad(item.id_videojuego, item.cantidad + 1)"
+                    class="text-space-lunar hover:text-yellow-400 p-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+              </svg>
+            </button>
+            <button (click)="eliminarDelCarrito(item.id_videojuego)" 
+                    class="text-red-500 hover:text-red-600 p-1">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Footer -->
+    <div class="border-t border-space-nebula p-4 bg-space-deep mt-auto">
+      <div class="flex justify-between items-center mb-4">
+        <span class="text-space-lunar">Total:</span>
+        <span class="text-yellow-400 font-semibold">€{{ totalPrecio.toFixed(2) }}</span>
+      </div>
+      <div class="space-y-2">
+        <button [disabled]="itemsCarrito.length === 0"
+                (click)="realizarPedido()"
+                class="w-full bg-yellow-400 hover:bg-yellow-500 disabled:opacity-50 disabled:cursor-not-allowed text-space-deep font-medium py-2 px-4 rounded-lg transition-colors">
+          Realizar Pedido
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<main>
+  <!-- Hero Section -->
+  <section *ngIf="showMainSection" class="relative bg-space-deep min-h-[80vh] flex items-center">
+    <!-- Background con efecto de estrellas mejorado -->
+    <div class="absolute inset-0 overflow-hidden">
+      <app-particles></app-particles>
+    </div>
+    <!-- Contenido Principal -->
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <!-- Texto -->
+        <div class="flex-1 text-center lg:text-left">
+          <h1 class="text-4xl md:text-6xl font-saira font-bold text-space-lunar mb-6">
+            Explora el Universo<br/>
+            <span class="text-yellow-400">Gaming</span>
+          </h1>
+          <p class="text-space-silver text-lg md:text-xl mb-8 max-w-2xl">
+            Descubre una galaxia de juegos increíbles a precios estelares. Tu próxima aventura gaming está a solo un click de distancia.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a (click)="navigateToCatalogo()" routerLink="catalogo" class="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-lg text-space-deep bg-yellow-400 hover:bg-yellow-300 transition-colors duration-300">
+              Explorar Catálogo
+              <svg class="w-5 h-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Imagen/Decoración -->
+        <div class="flex-1 relative">
+          <div class="relative w-full h-[400px] rounded-full bg-space-nebula/20 backdrop-blur-sm">
+            <!-- Luna decorativa -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <img 
+                src="https://images.unsplash.com/photo-1532693322450-2cb5c511067d?w=800&auto=format&fit=crop&q=100" 
+                alt="Luna llena en el espacio" 
+                class="w-80 h-80 rounded-full object-cover brightness-110 contrast-110"
+                loading="lazy">
+            </div>
+            <!-- Órbita decorativa -->
+            <div class="absolute inset-0 border-4 border-dashed border-space-nebula/30 rounded-full animate-[spin_20s_linear_infinite]"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div (click)="scrollToCategories()" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer">
+        <svg class="w-6 h-6 text-space-lunar hover:text-yellow-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </div>
+    </div>
+  </section>
+</main>
+<router-outlet></router-outlet>
+<footer class="bg-space-deep border-t border-space-nebula">
+  <div class="mx-auto max-w-screen-xl p-6 md:p-8">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <!-- Logo y descripción -->
+      <div>
+        <div class="flex items-center gap-2">
+          <svg class="h-6 w-6 text-yellow-400" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+          </svg>
+          <span class="font-saira text-xl font-semibold text-space-lunar">Lunar Games</span>
+        </div>
+        <p class="mt-4 text-sm text-space-silver">
+          Tu destino gaming definitivo. Encuentra los mejores juegos al mejor precio.
+        </p>
+      </div>
+
+      <!-- Enlaces rápidos -->
+      <div>
+        <h3 class="font-saira text-lg font-semibold text-space-lunar mb-4">Enlaces Rápidos</h3>
+        <ul class="space-y-2 text-space-silver">
+          <li>
+            <a href="#" class="text-sm hover:text-yellow-400 transition-colors">Inicio</a>
+          </li>
+          <li>
+            <a routerLink="/contact" class="text-sm hover:text-yellow-400 transition-colors">Contacto</a>
+          </li>
+          <li>
+            <a (click)="openAdminModal($event)" class="text-sm hover:text-yellow-400 transition-colors">Panel de Administración</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div>
+        <h3 class="font-saira text-lg font-semibold text-space-lunar mb-4">Contacto</h3>
+        <ul class="space-y-2 text-space-silver">
+          <li class="flex items-center gap-2">
+            <i class="fas fa-envelope text-yellow-400"></i>
+            <a href="#" class="text-sm hover:text-yellow-400 transition-colors">info&#64;lunargames.com</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-phone text-yellow-400"></i>
+            <span class="text-sm">+34 912 345 678</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-8 border-t border-space-nebula pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-sm text-space-silver"> 2024 Lunar Games. Todos los derechos reservados.</p>
+      <div class="flex space-x-6">
+        <a href="#" class="text-space-silver hover:text-yellow-400 transition-colors">
+          <i class="fab fa-facebook-f text-xl"></i>
+        </a>
+        <a href="#" class="text-space-silver hover:text-yellow-400 transition-colors">
+          <i class="fab fa-twitter text-xl"></i>
+        </a>
+        <a href="#" class="text-space-silver hover:text-yellow-400 transition-colors">
+          <i class="fab fa-instagram text-xl"></i>
+        </a>
+        <a href="#" class="text-space-silver hover:text-yellow-400 transition-colors">
+          <i class="fab fa-discord text-xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<app-checkout-modal #checkoutModal></app-checkout-modal>
+<!-- Admin Modal -->
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+     [ngClass]="{'hidden': !showAdminModal}"
+     (click)="closeAdminModal()">
+  <div class="bg-space-deep p-8 rounded-lg shadow-xl max-w-md w-full mx-4"
+       (click)="$event.stopPropagation()">
+    <app-admin-modal 
+      (close)="closeAdminModal()"
+      (authenticated)="onAdminAuthenticated()">
+    </app-admin-modal>
+  </div>
+</div>

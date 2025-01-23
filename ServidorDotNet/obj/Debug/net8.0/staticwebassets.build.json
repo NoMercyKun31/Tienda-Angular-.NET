@@ -1,0 +1,1876 @@
+{
+  "Version": 1,
+  "Hash": "XMUTyCdnr0D8vc0/0/DisSc2g90dOfDXknp/9HVuc+I=",
+  "Source": "ServidorDotNet",
+  "BasePath": "_content/ServidorDotNet",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ServidorDotNet\\wwwroot",
+      "Source": "ServidorDotNet",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\24.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/24#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yy63x4xenj",
+      "Integrity": "CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\24.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\25.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/25#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yy63x4xenj",
+      "Integrity": "CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\25.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\26.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/26#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dm6e43jbcb",
+      "Integrity": "BXmjMBcGlgR7PcX1FDwnFz43hpHOPoklfMQKAnOGKJE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\26.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\27.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/27#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dm6e43jbcb",
+      "Integrity": "BXmjMBcGlgR7PcX1FDwnFz43hpHOPoklfMQKAnOGKJE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\27.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\28.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/28#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yy63x4xenj",
+      "Integrity": "CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\28.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\29.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/29#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yy63x4xenj",
+      "Integrity": "CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\29.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\30.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/30#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yy63x4xenj",
+      "Integrity": "CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\30.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\31.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/31#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yy63x4xenj",
+      "Integrity": "CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\31.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\32.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/32#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ezvdop6pqt",
+      "Integrity": "1mDYX8dBr8eEiCC7tYQ9V2LmRtK78THHIDR6q6hMbRg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\32.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\33.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/33#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qzgtcih26q",
+      "Integrity": "Rp9iyTQIfs09qeSIk9D51r1aH7aPNSxVkMGPOJk/9JE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\33.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\34.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/34#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yy63x4xenj",
+      "Integrity": "CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\34.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\35.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/35#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yy63x4xenj",
+      "Integrity": "CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\35.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\36.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/36#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6td4yx0u6y",
+      "Integrity": "6iSD0JAhYMM8kBMuwghcuLJXpwbiK2KfVcs3tqOmxoA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\36.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\37.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/37#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6td4yx0u6y",
+      "Integrity": "6iSD0JAhYMM8kBMuwghcuLJXpwbiK2KfVcs3tqOmxoA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\37.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\38.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/38#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yy63x4xenj",
+      "Integrity": "CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\38.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\40.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/40#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yy63x4xenj",
+      "Integrity": "CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\40.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\42.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/42#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qzgtcih26q",
+      "Integrity": "Rp9iyTQIfs09qeSIk9D51r1aH7aPNSxVkMGPOJk/9JE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\42.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\51.jpg",
+      "SourceId": "ServidorDotNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\",
+      "BasePath": "_content/ServidorDotNet",
+      "RelativePath": "imagenes/51#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0zc25ah7dj",
+      "Integrity": "1PSmVL8vcIyJUljla38M/Vd9gHmh8wUVuX8PvEQGHj4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\51.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "imagenes/24.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\24.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:23:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/24.yy63x4xenj.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\24.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:23:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yy63x4xenj"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/24.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/25.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\25.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:24:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/25.yy63x4xenj.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\25.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:24:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yy63x4xenj"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/25.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/26.dm6e43jbcb.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\26.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BXmjMBcGlgR7PcX1FDwnFz43hpHOPoklfMQKAnOGKJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:26:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dm6e43jbcb"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/26.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BXmjMBcGlgR7PcX1FDwnFz43hpHOPoklfMQKAnOGKJE="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/26.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\26.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BXmjMBcGlgR7PcX1FDwnFz43hpHOPoklfMQKAnOGKJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:26:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BXmjMBcGlgR7PcX1FDwnFz43hpHOPoklfMQKAnOGKJE="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/27.dm6e43jbcb.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\27.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BXmjMBcGlgR7PcX1FDwnFz43hpHOPoklfMQKAnOGKJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:27:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dm6e43jbcb"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/27.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BXmjMBcGlgR7PcX1FDwnFz43hpHOPoklfMQKAnOGKJE="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/27.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\27.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BXmjMBcGlgR7PcX1FDwnFz43hpHOPoklfMQKAnOGKJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:27:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BXmjMBcGlgR7PcX1FDwnFz43hpHOPoklfMQKAnOGKJE="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/28.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\28.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:29:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/28.yy63x4xenj.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\28.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:29:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yy63x4xenj"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/28.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/29.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\29.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:34:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/29.yy63x4xenj.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\29.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:34:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yy63x4xenj"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/29.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/30.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\30.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:35:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/30.yy63x4xenj.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\30.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:35:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yy63x4xenj"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/30.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/31.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\31.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:37:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/31.yy63x4xenj.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\31.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:37:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yy63x4xenj"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/31.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/32.ezvdop6pqt.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\32.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1485340"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1mDYX8dBr8eEiCC7tYQ9V2LmRtK78THHIDR6q6hMbRg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:42:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ezvdop6pqt"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/32.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1mDYX8dBr8eEiCC7tYQ9V2LmRtK78THHIDR6q6hMbRg="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/32.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\32.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1485340"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1mDYX8dBr8eEiCC7tYQ9V2LmRtK78THHIDR6q6hMbRg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:42:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1mDYX8dBr8eEiCC7tYQ9V2LmRtK78THHIDR6q6hMbRg="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/33.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\33.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rp9iyTQIfs09qeSIk9D51r1aH7aPNSxVkMGPOJk/9JE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:45:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rp9iyTQIfs09qeSIk9D51r1aH7aPNSxVkMGPOJk/9JE="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/33.qzgtcih26q.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\33.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rp9iyTQIfs09qeSIk9D51r1aH7aPNSxVkMGPOJk/9JE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:45:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qzgtcih26q"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/33.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rp9iyTQIfs09qeSIk9D51r1aH7aPNSxVkMGPOJk/9JE="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/34.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\34.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:51:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/34.yy63x4xenj.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\34.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:51:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yy63x4xenj"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/34.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/35.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\35.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:51:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/35.yy63x4xenj.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\35.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:51:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yy63x4xenj"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/35.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/36.6td4yx0u6y.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\36.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6iSD0JAhYMM8kBMuwghcuLJXpwbiK2KfVcs3tqOmxoA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:56:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6td4yx0u6y"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/36.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6iSD0JAhYMM8kBMuwghcuLJXpwbiK2KfVcs3tqOmxoA="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/36.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\36.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6iSD0JAhYMM8kBMuwghcuLJXpwbiK2KfVcs3tqOmxoA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:56:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6iSD0JAhYMM8kBMuwghcuLJXpwbiK2KfVcs3tqOmxoA="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/37.6td4yx0u6y.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\37.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6iSD0JAhYMM8kBMuwghcuLJXpwbiK2KfVcs3tqOmxoA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 19:02:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6td4yx0u6y"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/37.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6iSD0JAhYMM8kBMuwghcuLJXpwbiK2KfVcs3tqOmxoA="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/37.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\37.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6iSD0JAhYMM8kBMuwghcuLJXpwbiK2KfVcs3tqOmxoA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 19:02:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6iSD0JAhYMM8kBMuwghcuLJXpwbiK2KfVcs3tqOmxoA="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/38.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\38.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 17:15:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/38.yy63x4xenj.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\38.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 17:15:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yy63x4xenj"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/38.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/40.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\40.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 18:09:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/40.yy63x4xenj.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\40.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1771664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 18:09:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yy63x4xenj"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/40.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CieWX5zm6bpm3aCYSCkzIizVuqBGawaiwaClkGX4nRs="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/42.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\42.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rp9iyTQIfs09qeSIk9D51r1aH7aPNSxVkMGPOJk/9JE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 18:53:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rp9iyTQIfs09qeSIk9D51r1aH7aPNSxVkMGPOJk/9JE="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/42.qzgtcih26q.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\42.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rp9iyTQIfs09qeSIk9D51r1aH7aPNSxVkMGPOJk/9JE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 18:53:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qzgtcih26q"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/42.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rp9iyTQIfs09qeSIk9D51r1aH7aPNSxVkMGPOJk/9JE="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/51.0zc25ah7dj.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\51.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30183"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1PSmVL8vcIyJUljla38M/Vd9gHmh8wUVuX8PvEQGHj4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 18:34:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0zc25ah7dj"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/51.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1PSmVL8vcIyJUljla38M/Vd9gHmh8wUVuX8PvEQGHj4="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/51.jpg",
+      "AssetFile": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\51.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30183"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1PSmVL8vcIyJUljla38M/Vd9gHmh8wUVuX8PvEQGHj4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 18:34:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1PSmVL8vcIyJUljla38M/Vd9gHmh8wUVuX8PvEQGHj4="
+        }
+      ]
+    }
+  ]
+}

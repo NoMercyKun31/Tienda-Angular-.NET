@@ -1,0 +1,100 @@
+<div class="bg-space-deep min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto bg-space-nebula rounded-lg shadow-xl p-8">
+        <h2 class="text-3xl font-bold font-saira text-yellow-400 text-center mb-8">Añadir Videojuego</h2>
+        
+        <form class="space-y-6" [formGroup]="productoForm" (ngSubmit)="registrarVideojuego()">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <label for="titulo" class="block text-yellow-400 font-medium mb-2">Título</label>
+                    <input type="text" id="titulo" formControlName="titulo" 
+                        class="w-full px-4 py-2 rounded-lg bg-space-deep text-space-lunar border border-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                        [ngClass]="{'border-red-500': productoForm.get('titulo')?.touched && productoForm.get('titulo')?.invalid}">
+                    <div *ngIf="productoForm.get('titulo')?.touched && productoForm.get('titulo')?.invalid" 
+                         class="text-red-500 text-sm mt-1">
+                        {{ getErrorMessage('titulo') }}
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-yellow-400 font-medium mb-2">Precio</label>
+                    <input type="text" formControlName="precio" 
+                        (blur)="formatearPrecio($event)"
+                        class="w-full bg-[#0a0b14] border border-yellow-400/20 rounded-lg p-2 text-white"
+                        [ngClass]="{'border-red-500': productoForm.get('precio')?.touched && productoForm.get('precio')?.invalid}"
+                        required>
+                    <div *ngIf="productoForm.get('precio')?.touched && productoForm.get('precio')?.invalid" 
+                         class="text-red-500 text-sm mt-1">
+                        {{ getErrorMessage('precio') }}
+                    </div>
+                </div>
+
+                <div>
+                    <label for="compania" class="block text-yellow-400 font-medium mb-2">Compañía</label>
+                    <input type="text" id="compania" formControlName="compania" 
+                        class="w-full px-4 py-2 rounded-lg bg-space-deep text-space-lunar border border-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                        [ngClass]="{'border-red-500': productoForm.get('compania')?.touched && productoForm.get('compania')?.invalid}">
+                    <div *ngIf="productoForm.get('compania')?.touched && productoForm.get('compania')?.invalid" 
+                         class="text-red-500 text-sm mt-1">
+                        {{ getErrorMessage('compania') }}
+                    </div>
+                </div>
+
+                <div>
+                    <label for="anio_lanzamiento" class="block text-yellow-400 font-medium mb-2">Año de Lanzamiento</label>
+                    <input type="number" id="anio_lanzamiento" formControlName="anio_lanzamiento" 
+                        class="w-full px-4 py-2 rounded-lg bg-space-deep text-space-lunar border border-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                        [ngClass]="{'border-red-500': productoForm.get('anio_lanzamiento')?.touched && productoForm.get('anio_lanzamiento')?.invalid}">
+                    <div *ngIf="productoForm.get('anio_lanzamiento')?.touched && productoForm.get('anio_lanzamiento')?.invalid" 
+                         class="text-red-500 text-sm mt-1">
+                        {{ getErrorMessage('anio_lanzamiento') }}
+                    </div>
+                </div>
+
+                <div>
+                    <label for="categoria" class="block text-yellow-400 font-medium mb-2">Categoría</label>
+                    <input type="text" id="categoria" formControlName="categoria" 
+                        class="w-full px-4 py-2 rounded-lg bg-space-deep text-space-lunar border border-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                        [ngClass]="{'border-red-500': productoForm.get('categoria')?.touched && productoForm.get('categoria')?.invalid}">
+                    <div *ngIf="productoForm.get('categoria')?.touched && productoForm.get('categoria')?.invalid" 
+                         class="text-red-500 text-sm mt-1">
+                        {{ getErrorMessage('categoria') }}
+                    </div>
+                </div>
+
+                <div>
+                    <label for="estado" class="block text-yellow-400 font-medium mb-2">Estado</label>
+                    <select id="estado" formControlName="estado" 
+                        class="w-full px-4 py-2 rounded-lg bg-space-deep text-space-lunar border border-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        <option value="En Oferta">En Oferta</option>
+                        <option value="Destacado">Destacado</option>
+                        <option value="Nuevo Lanzamiento">Nuevo Lanzamiento</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="imagen" class="block text-yellow-400 font-medium mb-2">Imagen del Juego</label>
+                    <div class="flex items-center space-x-2">
+                        <input type="file" id="imagen" (change)="archivoSeleccionado($event)" accept="image/*"
+                            class="hidden" #fileInput>
+                        <button type="button" (click)="fileInput.click()"
+                            class="px-4 py-2 bg-yellow-400 text-space-deep rounded-lg hover:bg-yellow-500 transition-colors duration-300">
+                            Seleccionar Imagen
+                        </button>
+                        <span class="text-yellow-400" *ngIf="nombreArchivo">{{ nombreArchivo }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-2 flex justify-between gap-4 mt-4">
+                <button type="button" (click)="volver()"
+                    class="w-1/4 bg-gray-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-600 transition-colors duration-300">
+                    Volver
+                </button>
+                <button type="submit" [disabled]="!productoForm.valid" 
+                    class="w-3/4 bg-yellow-400 text-space-deep font-semibold py-2 px-4 rounded-lg hover:bg-yellow-500 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                    Registrar Videojuego
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

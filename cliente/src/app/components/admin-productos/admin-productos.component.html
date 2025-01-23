@@ -1,0 +1,136 @@
+<div class="min-h-screen bg-[#0a0b14] py-8">
+    <div class="container mx-auto px-4 bg-gradient-to-b from-space-nebula via-space-midnight to-space-deep">
+        <!-- Header -->
+        <div class="bg-[#1a1b2e] rounded-lg shadow-lg p-6 mb-8 border border-yellow-400/20">
+            <div class="flex items-center mb-4">
+                <button (click)="volver()" class="text-yellow-400 hover:text-yellow-300 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Volver
+                </button>
+            </div>
+            <div class="text-center">
+                <h1 class="text-3xl font-saira font-bold text-[#e5e7eb] mb-2">Gestión de <span class="text-yellow-400">Productos</span></h1>
+                <p class="text-gray-400">Administra el catálogo de videojuegos</p>
+            </div>
+        </div>
+
+        <!-- Table Container -->
+        <div class="bg-[#1a1b2e] rounded-lg shadow-lg p-6 border border-yellow-400/20">
+            <div class="overflow-x-auto">
+                <table class="min-w-full">
+                    <thead>
+                        <tr class="border-b border-yellow-400/20">
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">ID</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Título</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Precio</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Estado</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Compañía</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Año</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Categoría</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-yellow-400/10">
+                        <tr *ngFor="let videojuego of videojuegos" class="hover:bg-yellow-400/5">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">{{videojuego.id}}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-[#e5e7eb]">{{videojuego.titulo}}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">{{videojuego.precio}}€</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span [class]="'px-2 py-1 rounded-full text-white text-xs ' + getEstadoClase(videojuego.estado)">
+                                    {{videojuego.estado}}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">{{videojuego.compania}}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">{{videojuego.anio_lanzamiento}}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">{{videojuego.categoria}}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+                                <div class="flex space-x-2">
+                                    <button (click)="abrirModalEdicion(videojuego)" 
+                                            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                                        <i class="fas fa-edit"></i> Editar
+                                    </button>
+                                    <button (click)="borrarVideojuego(videojuego.id)" 
+                                            class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                                        <i class="fas fa-trash-alt"></i> Borrar
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mensaje de éxito -->
+<div *ngIf="mostrarMensaje" class="alert alert-success alert-dismissible fade show" role="alert">
+  {{ mensajeExito }}
+  <button type="button" class="btn-close" (click)="mostrarMensaje = false" aria-label="Close"></button>
+</div>
+
+<!-- Modal de Edición -->
+<div *ngIf="mostrarModalEdicion" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-[#1a1b2e] rounded-lg shadow-xl p-8 w-full max-w-2xl border border-yellow-400/20">
+        <h2 class="text-2xl font-saira font-bold text-[#e5e7eb] mb-6">Editar Videojuego</h2>
+        
+        <form (ngSubmit)="guardarEdicion()" #editForm="ngForm" class="space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-yellow-400 mb-2">Título</label>
+                    <input [(ngModel)]="videojuegoEnEdicion.titulo" name="titulo" required
+                           class="w-full bg-[#0a0b14] border border-yellow-400/20 rounded-lg p-2 text-white">
+                </div>
+                <div>
+                    <label class="block text-yellow-400 mb-2">Precio</label>
+                    <input [(ngModel)]="videojuegoEnEdicion.precio" name="precio" type="text"
+                        (blur)="formatearPrecio($event)"
+                        class="w-full bg-[#0a0b14] border border-yellow-400/20 rounded-lg p-2 text-white"
+                        required>
+                </div>
+                <div>
+                    <label class="block text-yellow-400 mb-2">Estado</label>
+                    <select [(ngModel)]="videojuegoEnEdicion.estado" name="estado" required
+                            class="w-full bg-[#0a0b14] border border-yellow-400/20 rounded-lg p-2 text-white">
+                        <option value="En Oferta">En Oferta</option>
+                        <option value="Destacado">Destacado</option>
+                        <option value="Nuevo Lanzamiento">Nuevo Lanzamiento</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-yellow-400 mb-2">Compañía</label>
+                    <input [(ngModel)]="videojuegoEnEdicion.compania" name="compania" required
+                           class="w-full bg-[#0a0b14] border border-yellow-400/20 rounded-lg p-2 text-white">
+                </div>
+                <div>
+                    <label class="block text-yellow-400 mb-2">Año de Lanzamiento</label>
+                    <input [(ngModel)]="videojuegoEnEdicion.anio_lanzamiento" name="anio_lanzamiento" type="number" required
+                           class="w-full bg-[#0a0b14] border border-yellow-400/20 rounded-lg p-2 text-white">
+                </div>
+                <div>
+                    <label class="block text-yellow-400 mb-2">Categoría</label>
+                    <input [(ngModel)]="videojuegoEnEdicion.categoria" name="categoria" required
+                           class="w-full bg-[#0a0b14] border border-yellow-400/20 rounded-lg p-2 text-white">
+                </div>
+                <div class="col-span-2">
+                    <label class="block text-yellow-400 mb-2">Imagen</label>
+                    <input type="file" (change)="onFileSelected($event)" accept="image/*"
+                           class="w-full bg-[#0a0b14] border border-yellow-400/20 rounded-lg p-2 text-white">
+                </div>
+            </div>
+            
+            <div class="flex justify-end space-x-4 mt-6">
+                <button type="button" (click)="cerrarModalEdicion()"
+                        class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                    Cancelar
+                </button>
+                <button type="submit" [disabled]="!editForm.form.valid"
+                        class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                    Guardar Cambios
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

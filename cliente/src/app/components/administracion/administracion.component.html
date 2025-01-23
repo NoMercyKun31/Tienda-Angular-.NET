@@ -1,0 +1,67 @@
+<!-- Header Section -->
+<div class="min-h-screen bg-[#0a0b14]">
+    <div class="container mx-auto px-4 py-8 bg-gradient-to-b from-space-nebula via-space-midnight to-space-deep">
+        <!-- Welcome Header -->
+        <div class="bg-[#1a1b2e] rounded-lg shadow-lg p-6 mb-8 border border-yellow-400/20">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="welcome-header" [class.show]="showWelcome">
+                        <span class="text-2xl font-saira font-bold text-[#e5e7eb] mb-2">Panel de </span>
+                        <span class="text-2xl font-saira font-bold text-yellow-400">Administración</span>
+                    </h1>
+                    <p class="welcome-text text-gray-400" [class.show]="showWelcome">¡Bienvenido al panel de administración de la tienda!</p>
+                </div>
+                <button (click)="logout()" 
+                    class="logout-button px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors flex items-center gap-2"
+                    [class.show]="showWelcome">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                    </svg>
+                    Cerrar Sesión
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Gestión Productos Card -->
+            <a routerLink="/admin-productos" class="block admin-card" [class.show]="showWelcome">
+                <div class="bg-[#1a1b2e] rounded-lg shadow-lg p-6 transition duration-300 hover:shadow-yellow-400/20 hover:scale-105 border border-yellow-400/20">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-xl font-saira font-semibold text-[#e5e7eb]">Gestión Productos</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
+                    </div>
+                    <p class="text-gray-400">Administra el inventario y detalles de productos</p>
+                </div>
+            </a>
+
+            <!-- Nuevo Producto Card -->
+            <a routerLink="/admin-nuevo-producto" class="block admin-card" [class.show]="showWelcome">
+                <div class="bg-[#1a1b2e] rounded-lg shadow-lg p-6 transition duration-300 hover:shadow-yellow-400/20 hover:scale-105 border border-yellow-400/20">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-xl font-saira font-semibold text-[#e5e7eb]">Nuevo Producto</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                    </div>
+                    <p class="text-gray-400">Añade nuevos productos al catálogo</p>
+                </div>
+            </a>
+
+            <!-- Gestión Pedidos Card -->
+            <a routerLink="/admin-pedidos" class="block admin-card" [class.show]="showWelcome">
+                <div class="bg-[#1a1b2e] rounded-lg shadow-lg p-6 transition duration-300 hover:shadow-yellow-400/20 hover:scale-105 border border-yellow-400/20">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-xl font-saira font-semibold text-[#e5e7eb]">Gestión Pedidos</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <p class="text-gray-400">Administra y supervisa los pedidos</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

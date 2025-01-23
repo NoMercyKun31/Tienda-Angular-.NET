@@ -1,0 +1,88 @@
+<div class="min-h-screen bg-[#0a0b14] py-8">
+    <div class="container mx-auto px-4 bg-gradient-to-b from-space-nebula via-space-midnight to-space-deep">
+        <!-- Header -->
+        <div class="bg-[#1a1b2e] rounded-lg shadow-lg p-6 mb-8 border border-yellow-400/20">
+            <div class="flex items-center mb-4">
+                <button (click)="volverAtras()" class="text-yellow-400 hover:text-yellow-300 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Volver
+                </button>
+            </div>
+            <div class="text-center">
+                <h1 class="text-3xl font-saira font-bold text-[#e5e7eb] mb-2">Gestión de <span class="text-yellow-400">Pedidos</span></h1>
+                <p class="text-gray-400">Administra los pedidos de la tienda</p>
+            </div>
+        </div>
+
+        <!-- Table Container -->
+        <div class="bg-[#1a1b2e] rounded-lg shadow-lg p-6 border border-yellow-400/20">
+            <div class="overflow-x-auto">
+                <table class="min-w-full">
+                    <thead>
+                        <tr class="border-b border-yellow-400/20">
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">ID</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Cliente</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Email</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Total</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Estado</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Fecha</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Detalles</th>
+                            <th class="px-6 py-3 text-left text-xs font-saira font-medium text-yellow-400 uppercase tracking-wider">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-yellow-400/10">
+                        <tr *ngFor="let pedido of pedidos" class="hover:bg-yellow-400/5">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">#{{pedido.id}}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-[#e5e7eb]">{{pedido.nombre}}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">{{pedido.email}}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">{{pedido.total | currency:'EUR'}}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <span [class]="'px-2 py-1 text-xs rounded-full ' + getEstadoClass(pedido.estado)">
+                                        {{pedido.estado.charAt(0).toUpperCase() + pedido.estado.slice(1)}}
+                                    </span>
+                                    <button 
+                                        (click)="pedido.editandoEstado = !pedido.editandoEstado"
+                                        class="ml-2 text-yellow-400 hover:text-yellow-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                        </svg>
+                                    </button>
+                                    <select 
+                                        *ngIf="pedido.editandoEstado"
+                                        [value]="pedido.estado"
+                                        (change)="cambiarEstado(pedido.id, $event)"
+                                        class="ml-2 bg-[#2a2b3e] text-white border border-yellow-400/20 rounded-md text-sm">
+                                        <option *ngFor="let estado of estadosDisponibles" [value]="estado">
+                                            {{estado.charAt(0).toUpperCase() + estado.slice(1)}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">{{pedido.fechaCreacion | date:'short'}}</td>
+                            <td class="px-6 py-4">
+                                <div class="space-y-2">
+                                    <div *ngFor="let detalle of pedido.detalles" 
+                                         class="text-sm text-gray-400">
+                                        {{detalle.cantidad}}x {{detalle.titulo}} 
+                                        <span class="text-gray-500">({{detalle.precioUnitario | currency:'EUR'}})</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex space-x-2">
+                                    <button (click)="eliminarPedido(pedido.id)" 
+                                            class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                                        <i class="fas fa-trash-alt"></i> Borrar
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

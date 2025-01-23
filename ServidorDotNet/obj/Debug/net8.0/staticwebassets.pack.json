@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\24.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\24.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\25.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\26.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\27.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\27.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\28.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\28.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\29.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\29.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\30.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\31.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\31.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\32.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\32.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\33.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\34.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\34.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\35.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\35.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\36.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\36.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\37.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\37.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\38.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\38.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\40.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\40.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\42.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\42.jpg"
+    },
+    {
+      "Id": "C:\\Users\\clorenzo\\Desktop\\Carlos\\doNet\\ServidorDotNet\\wwwroot\\imagenes\\51.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\51.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ServidorDotNet.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ServidorDotNet.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ServidorDotNet.props",
+      "PackagePath": "build\\ServidorDotNet.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ServidorDotNet.props",
+      "PackagePath": "buildMultiTargeting\\ServidorDotNet.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ServidorDotNet.props",
+      "PackagePath": "buildTransitive\\ServidorDotNet.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
