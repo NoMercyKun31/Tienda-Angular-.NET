@@ -7,8 +7,7 @@ Aplicación web fullstack para una tienda de videojuegos desarrollada con Angula
 ### Backend
 - .NET Core (API REST)
 - MySQL como base de datos
-- Entity Framework Core para el acceso a datos
-
+  
 ### Frontend
 - Angular
 - TypeScript
