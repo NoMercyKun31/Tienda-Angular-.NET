@@ -63,7 +63,7 @@ El proyecto completo está disponible en el archivo `doNet.rar` que incluye todo
 
 ## Notas Adicionales
 
-- Asegúrese de que los puertos 4200 (Angular) y 5000 (.NET) estén disponibles
+- Asegúrese de que los puertos 4200 (Angular) y 5132 (.NET) estén disponibles
 - La base de datos debe estar en ejecución antes de iniciar el backend
 
 ## Contacto
