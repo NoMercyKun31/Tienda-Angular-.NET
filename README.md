@@ -11,7 +11,7 @@ Aplicación web fullstack para una tienda de videojuegos desarrollada con Angula
 ### Frontend
 - Angular
 - TypeScript
-- Bootstrap para estilos
+- Tailwind.css para estilos
 
 ## Requisitos Previos
 
